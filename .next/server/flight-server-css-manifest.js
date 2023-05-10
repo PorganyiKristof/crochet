@@ -7,6 +7,9 @@ self.__RSC_CSS_MANIFEST={
   "cssModules": {
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\page": [
       "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css"
+    ],
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page": [
+      "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css"
     ]
   }
 }

@@ -1,3 +1,5 @@
+import SendMainBtn from "@components/SendMainBtn";
+
 export default function page() {
   return (
     <section className="w-screen flex-center flex-col">
@@ -15,6 +17,7 @@ export default function page() {
         officiis similique, officia laudantium non tenetur perferendis assumenda
         reiciendis beatae ullam soluta.
       </p>
+      <SendMainBtn />
     </section>
   );
 }

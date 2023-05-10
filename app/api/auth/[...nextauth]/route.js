@@ -15,6 +15,7 @@ const handler = {
             }
         })
     ],
+
     callbacks: {
         async signIn({
             user,
