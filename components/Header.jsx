@@ -13,11 +13,19 @@ export default function Header() {
     <nav className="grid grid-cols-4 gap-5 z-30 items-center md:absolute top-0 right-0 pt-4 mx-5 md:grid-cols-1 ">
       {session ? (
         <div className="col-span-3 grid grid-cols-2 gap-5 md:hidden">
-          <Button variant="outlined" onClick={() => push("/")}>
+          <Button
+            variant="outlined"
+            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
+            onClick={() => push("/")}
+          >
             Home
           </Button>
 
-          <Button onClick={() => signOut()} variant="outlined">
+          <Button
+            onClick={() => signOut()}
+            variant="outlined"
+            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
+          >
             Sign Out
           </Button>
         </div>
@@ -44,21 +52,31 @@ export default function Header() {
               onClick={() => setToggleDropDown((prev) => !prev)}
             />
 
-            <div className="bg-gray-700 rounded-lg justify-center self-center">
+            <div className=" rounded-lg justify-center self-center">
               <Button
                 onClick={() => push("/")}
                 variant="text"
-                sx={{ color: "white", justifyContent: "center" }}
+                sx={{
+                  color: "white",
+                  justifyContent: "center",
+                  border: "1px solid var(--deepest)",
+                  color: "var(--deepest)",
+                }}
               >
                 Home
               </Button>
             </div>
             {toggleDropDown && (
-              <div className="bg-gray-700 rounded-lg justify-center self-center">
+              <div className="rounded-lg justify-center self-center">
                 <Button
                   onClick={() => signOut()}
                   variant="text"
-                  sx={{ color: "white", justifyContent: "center" }}
+                  sx={{
+                    color: "white",
+                    justifyContent: "center",
+                    border: "1px solid var(--deepest)",
+                    color: "var(--deepest)",
+                  }}
                 >
                   Sign Out
                 </Button>
@@ -77,7 +95,16 @@ export default function Header() {
         </div>
       ) : (
         <div className="md:flex hidden">
-          <Button onClick={() => signIn()} variant="outlined">
+          <Button
+            onClick={() => signIn()}
+            variant="outlined"
+            sx={{
+              color: "white",
+              justifyContent: "center",
+              border: "1px solid var(--deepest)",
+              color: "var(--deepest)",
+            }}
+          >
             Sign In with Google
           </Button>
         </div>

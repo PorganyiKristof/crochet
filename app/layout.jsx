@@ -8,17 +8,17 @@ import Loading from "./loading";
 export default function layout({ children }) {
   return (
     <html>
-      <body>
-        <Provider>
-          <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}>
+        <body>
+          <Provider>
             <Header />
             <div className="main ">
               <div className="gradient" />
             </div>
             <main className="app w-full m-auto md:mt-8">{children}</main>
-          </Suspense>
-        </Provider>
-      </body>
+          </Provider>
+        </body>
+      </Suspense>
     </html>
   );
 }

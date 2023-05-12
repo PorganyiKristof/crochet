@@ -62,6 +62,7 @@ export default function emailPage() {
           label="Please enter you`re description or question!"
           multiline
           maxRows={20}
+          sx={{ backgroundColor: "var(--primary)", borderRadius: "15px" }}
           variant="filled"
         />
         <Button type="submit" variant="outlined">

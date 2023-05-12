@@ -7,7 +7,7 @@ export default function page() {
         Crochet<span className="sm:hidden"> </span>.Dorka
         <span className="sm:hidden"> </span>.com
         <br />
-        <span className="orange_gradient text-center w-full">
+        <span className="custom_gradient text-center w-full">
           Guess what, I`ll do it
         </span>
       </h1>
