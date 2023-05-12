@@ -4,24 +4,35 @@ import { Button, TextField } from "@mui/material";
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 
+const submit = async (e) => {
+  e.preventDefault();
+  const dataMail = {
+    email: email.value,
+    name: e.target.name.value,
+    desc: e.target.desc.value,
+  };
+  console.log(dataMail);
+  const response = await fetch("/api/mailer", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dataMail),
+  });
+  if (response.ok) {
+    console.log("yes");
+  } else {
+    console.log(response.statusText);
+  }
+};
+
 export default function emailPage() {
   const { data: session } = useSession();
-  console.log(session);
   const [email, setEmail] = useState();
   useEffect(() => {
     setEmail(session?.user?.email);
   }, [session]);
 
-  const submit = (e) => {
-    e.preventDefault();
-    console.log(e.target);
-    console.log(e.target.email.value);
-    const emailData = {
-      email: email,
-      name: e.target.name.value,
-      desc: e.target.desc.value,
-    };
-  };
   return (
     <section>
       <form onSubmit={submit} className="flex flex-col">
