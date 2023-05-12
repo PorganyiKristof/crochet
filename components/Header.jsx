@@ -46,7 +46,7 @@ export default function Header() {
 
             <div className="bg-gray-700 rounded-lg justify-center self-center">
               <Button
-                onClick={() => signOut()}
+                onClick={() => push("/")}
                 variant="text"
                 sx={{ color: "white", justifyContent: "center" }}
               >

@@ -6,7 +6,7 @@ export async function POST(req, res, next) {
         from: "Crochet🐿💰 <porganyikristof@gmail.com>",
         to: "porganyikristof@gmail.com",
         subject: "Crochet-Massage",
-        html: `<div style='background-color:red,color:blue'>
+        html: `<div'>
             <h1>You recived an email from ${body.name}</h1>
             <p>${body.desc}</p>
             <p>Sender is: ${body.email}</p>
