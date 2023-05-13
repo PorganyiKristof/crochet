@@ -12,7 +12,7 @@ export default function layout({ children }) {
         <body>
           <Provider>
             <Header />
-            <div className="main ">
+            <div className="main">
               <div className="gradient" />
             </div>
             <main className="app w-full m-auto md:mt-8">{children}</main>

@@ -7,16 +7,16 @@ export default function Crochet({ crochet }) {
   return (
     <Link
       href={"/"}
-      className="grid grid-cols-2 bg-custom2 rounded-xl overflow-hidden group"
+      className="grid grid-cols-2 bg-custom2 overflow-hidden group md:rounded-xl"
     >
       <Image
-        className="w-max h-auto object-scale-down rounded-xl group-hover:scale-150 ease-in-out transition duration-500 delay-100"
+        className="w-max h-auto object-scale-down group-hover:scale-150 ease-in-out transition duration-500 delay-100 md:rounded-xl"
         src={crochet.img[0]}
         alt={crochet.name}
         width={500}
         height={200}
       />
-      <div className="text-center flex justify-center items-center m-5 border-2 border-custom3 rounded-xl">
+      <div className="text-center flex justify-center items-center m-5 border-2 border-custom3 md:rounded-xl">
         <div>
           <h1>{crochet.name}</h1>
           <h2>{crochet.price}</h2>
