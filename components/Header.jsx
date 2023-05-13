@@ -102,7 +102,19 @@ export default function Header() {
           </div>
         </div>
       ) : (
-        <div className="md:flex hidden">
+        <div className="md:flex gap-4 hidden">
+          <Button
+            onClick={() => push("/")}
+            variant="text"
+            sx={{
+              color: "white",
+              justifyContent: "center",
+              border: "1px solid var(--deepest)",
+              color: "var(--deepest)",
+            }}
+          >
+            Home
+          </Button>
           <Button
             onClick={() => signIn()}
             variant="outlined"

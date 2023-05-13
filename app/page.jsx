@@ -1,3 +1,4 @@
+import Crochets from "@components/Crochets";
 import SendMainBtn from "@components/SendMainBtn";
 
 export default function page() {
@@ -18,6 +19,7 @@ export default function page() {
         reiciendis beatae ullam soluta.
       </p>
       <SendMainBtn />
+      <Crochets />
     </section>
   );
 }

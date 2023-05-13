@@ -17,6 +17,9 @@ module.exports = {
         'custom3': '#E6A4B4',
         'custom4': '#C86B85',
       },
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit,minmax(15rem,1fr))',
+      },
 
     },
   },

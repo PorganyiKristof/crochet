@@ -7,8 +7,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: gray;
-  animation: coloring 2s ease infinite;
+  background-color: rgb(73, 73, 73);
+  animation: coloring 6s ease-in-out infinite;
 }
 
 .loader {

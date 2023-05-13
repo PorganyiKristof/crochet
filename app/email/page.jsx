@@ -2,38 +2,37 @@
 "use client";
 import { Button, TextField } from "@mui/material";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-
-const submit = async (e) => {
-  e.preventDefault();
-  const dataMail = {
-    email: email.value,
-    name: e.target.name.value,
-    desc: e.target.desc.value,
-  };
-  console.log(dataMail);
-  const response = await fetch("/api/mailer", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(dataMail),
-  });
-  if (response.ok) {
-    console.log("yes");
-    
-  } else {
-    console.log(response.statusText);
-  }
-};
 
 export default function emailPage() {
   const { data: session } = useSession();
   const [email, setEmail] = useState();
+  const { push } = useRouter();
+
   useEffect(() => {
     setEmail(session?.user?.email);
   }, [session]);
-
+  const submit = async (e) => {
+    e.preventDefault();
+    const dataMail = {
+      email: email.value,
+      name: e.target.name.value,
+      desc: e.target.desc.value,
+    };
+    const response = await fetch("/api/mailer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataMail),
+    });
+    if (response.ok) {
+      push("/");
+    } else {
+      console.log(response.statusText);
+    }
+  };
   return (
     <section>
       <form onSubmit={submit} className="flex flex-col">

@@ -742,6 +742,110 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg": {
+      "*": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png": {
+      "*": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg": {
+      "*": {
+        "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Crochet.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Crochet.jsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Crochet.jsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Crochet.jsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./components/SendMainBtn.jsx": {
       "*": {
         "id": "(sc_client)/./components/SendMainBtn.jsx",
@@ -768,58 +872,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./components/Header.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Header.jsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Header.jsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Header.jsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Provider.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -842,6 +894,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -992,28 +1070,54 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/email/page.jsx": {
+    "(app-client)/./components/Header.jsx": {
       "*": {
-        "id": "(sc_client)/./app/email/page.jsx",
+        "id": "(sc_client)/./components/Header.jsx",
         "name": "*",
         "chunks": [
-          "app/email/page:static/chunks/app/email/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/email/page.jsx",
+        "id": "(sc_client)/./components/Header.jsx",
         "name": "",
         "chunks": [
-          "app/email/page:static/chunks/app/email/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/email/page.jsx",
+        "id": "(sc_client)/./components/Header.jsx",
         "name": "default",
         "chunks": [
-          "app/email/page:static/chunks/app/email/page.js"
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Provider.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Provider.jsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Provider.jsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Provider.jsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -2725,13 +2829,101 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
-      "id": "null",
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.jpg": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.jpg#": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.jpg#default": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
       "name": "default",
       "chunks": [
-        "static/css/app/loading.css",
-        "static/css/app/layout.css"
-      ]
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.png": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.png#": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343016261_764547991740663_7145802567922255948_n.png#default": {
+      "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343082287_5692679047503334_5048110264889831882_n.jpg": {
+      "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343082287_5692679047503334_5048110264889831882_n.jpg#": {
+      "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\343082287_5692679047503334_5048110264889831882_n.jpg#default": {
+      "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Crochet.jsx": {
+      "id": "(app-client)/./components/Crochet.jsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Crochet.jsx#": {
+      "id": "(app-client)/./components/Crochet.jsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Crochet.jsx#default": {
+      "id": "(app-client)/./components/Crochet.jsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     },
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx": {
       "id": "(app-client)/./components/SendMainBtn.jsx",
@@ -2754,61 +2946,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx": {
-      "id": "(app-client)/./components/Header.jsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx#": {
-      "id": "(app-client)/./components/Header.jsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx#default": {
-      "id": "(app-client)/./components/Header.jsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx#": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx#default": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2857,6 +2994,54 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\esm\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3148,27 +3333,66 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx": {
-      "id": "(app-client)/./app/email/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/email/page:static/chunks/app/email/page.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx#": {
-      "id": "(app-client)/./app/email/page.jsx",
-      "name": "",
-      "chunks": [
-        "app/email/page:static/chunks/app/email/page.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx#default": {
-      "id": "(app-client)/./app/email/page.jsx",
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/email/page:static/chunks/app/email/page.js"
+        "static/css/app/loading.css",
+        "static/css/app/layout.css"
+      ]
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx": {
+      "id": "(app-client)/./components/Header.jsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx#": {
+      "id": "(app-client)/./components/Header.jsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx#default": {
+      "id": "(app-client)/./components/Header.jsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx#": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Provider.jsx#default": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     }
