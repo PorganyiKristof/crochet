@@ -10,7 +10,15 @@ export default function SendMainBtn() {
       <div className="w-60 m-auto">
         <Button
           variant="contained"
-          sx={{ color: "white", position: "relative", margin: "auto" }}
+          sx={{
+            color: "white",
+            position: "relative",
+            margin: "auto",
+            "&:hover": {
+              backgroundColor: "var(--mostused)",
+              color: "var(--deepest)",
+            },
+          }}
           onClick={() => push("/email")}
         >
           Send Custom Email

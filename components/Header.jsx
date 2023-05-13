@@ -31,11 +31,19 @@ export default function Header() {
         </div>
       ) : (
         <div className="col-span-4 grid grid-cols-2 gap-5 md:hidden">
-          <Button variant="outlined" onClick={() => push("/")}>
+          <Button
+            variant="outlined"
+            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
+            onClick={() => push("/")}
+          >
             Home
           </Button>
 
-          <Button onClick={() => signIn("google")} variant="outlined">
+          <Button
+            onClick={() => signIn("google")}
+            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
+            variant="outlined"
+          >
             Sign In
           </Button>
         </div>
