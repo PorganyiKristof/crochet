@@ -742,6 +742,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./components/SendMainBtn.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/SendMainBtn.jsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/SendMainBtn.jsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/SendMainBtn.jsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./components/Header.jsx": {
       "*": {
         "id": "(sc_client)/./components/Header.jsx",
@@ -966,32 +992,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./components/SendMainBtn.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/SendMainBtn.jsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/SendMainBtn.jsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/SendMainBtn.jsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./app/email/page.jsx": {
       "*": {
         "id": "(sc_client)/./app/email/page.jsx",
@@ -1021,11 +1021,11 @@ self.__RSC_MANIFEST={
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\layout": [
-      "static/css/app/layout.css"
-    ],
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\loading": [
       "static/css/app/loading.css"
+    ],
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\layout": [
+      "static/css/app/layout.css"
     ]
   },
   "clientModules": {
@@ -2725,19 +2725,43 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/loading.css",
+        "static/css/app/layout.css"
+      ]
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx": {
+      "id": "(app-client)/./components/SendMainBtn.jsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx#": {
+      "id": "(app-client)/./components/SendMainBtn.jsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx#default": {
+      "id": "(app-client)/./components/SendMainBtn.jsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
-      ]
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css",
-        "static/css/app/loading.css"
       ]
     },
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx": {
@@ -3121,30 +3145,6 @@ self.__RSC_MANIFEST={
       "name": "value",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx": {
-      "id": "(app-client)/./components/SendMainBtn.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx#": {
-      "id": "(app-client)/./components/SendMainBtn.jsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\SendMainBtn.jsx#default": {
-      "id": "(app-client)/./components/SendMainBtn.jsx",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },

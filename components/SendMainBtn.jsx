@@ -14,6 +14,7 @@ export default function SendMainBtn() {
             color: "white",
             position: "relative",
             margin: "auto",
+            backgroundColor: "none",
             "&:hover": {
               backgroundColor: "var(--mostused)",
               color: "var(--deepest)",
