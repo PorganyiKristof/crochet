@@ -971,7 +971,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -979,7 +979,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -987,7 +987,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       }
@@ -997,7 +997,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -1005,7 +1005,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -1013,7 +1013,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       }
@@ -1023,7 +1023,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -1031,7 +1031,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       },
@@ -1039,7 +1039,33 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./public/assets/images/zumzum.jpg": {
+      "*": {
+        "id": "(sc_client)/./public/assets/images/zumzum.jpg",
+        "name": "*",
+        "chunks": [
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/images/zumzum.jpg",
+        "name": "",
+        "chunks": [
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/images/zumzum.jpg",
+        "name": "default",
+        "chunks": [
+          "app/[id]/layout:static/chunks/app/[id]/layout.js"
         ],
         "async": false
       }
@@ -1118,6 +1144,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/email/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/email/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/email/page:static/chunks/app/email/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/email/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/email/page:static/chunks/app/email/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/email/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/email/page:static/chunks/app/email/page.js"
         ],
         "async": false
       }
@@ -3232,7 +3284,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3240,7 +3292,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
       "name": "",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3248,7 +3300,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3256,7 +3308,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3264,7 +3316,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
       "name": "",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3272,7 +3324,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343016261_764547991740663_7145802567922255948_n.png",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3280,7 +3332,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3288,7 +3340,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
       "name": "",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3296,7 +3348,31 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\zumzum.jpg": {
+      "id": "(app-client)/./public/assets/images/zumzum.jpg",
+      "name": "*",
+      "chunks": [
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\zumzum.jpg#": {
+      "id": "(app-client)/./public/assets/images/zumzum.jpg",
+      "name": "",
+      "chunks": [
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\public\\assets\\images\\zumzum.jpg#default": {
+      "id": "(app-client)/./public/assets/images/zumzum.jpg",
+      "name": "default",
+      "chunks": [
+        "app/[id]/layout:static/chunks/app/[id]/layout.js"
       ],
       "async": false
     },
@@ -3393,6 +3469,30 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx": {
+      "id": "(app-client)/./app/email/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/email/page:static/chunks/app/email/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx#": {
+      "id": "(app-client)/./app/email/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/email/page:static/chunks/app/email/page.js"
+      ],
+      "async": false
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page.jsx#default": {
+      "id": "(app-client)/./app/email/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/email/page:static/chunks/app/email/page.js"
       ],
       "async": false
     }

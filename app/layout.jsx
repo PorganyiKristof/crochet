@@ -9,13 +9,13 @@ export default function layout({ children }) {
   return (
     <html>
       <Suspense fallback={<Loading />}>
-        <body>
+        <body className="max-w-screen overflow-x-hidden">
           <Provider>
             <Header />
             <div className="main">
               <div className="gradient" />
             </div>
-            <main className="app w-full m-auto md:mt-8">{children}</main>
+            <main className="w-full m-auto md:mt-8">{children}</main>
           </Provider>
         </body>
       </Suspense>

@@ -103,5 +103,5 @@ body{
   @apply bg-gradient-to-r from-slate-200 via-custom4  to-custom3 ;
 }
 .desc {
-  @apply mt-5 mx-auto text-lg text-gray-600 sm:text-xl max-w-2xl text-center;
+  @apply mt-3 mx-10 md:mx-auto text-lg text-gray-600 sm:text-xl max-w-2xl text-center;
 }
