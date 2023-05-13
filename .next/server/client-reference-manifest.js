@@ -1125,11 +1125,11 @@ self.__RSC_MANIFEST={
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\loading": [
-      "static/css/app/loading.css"
-    ],
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\layout": [
       "static/css/app/layout.css"
+    ],
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\loading": [
+      "static/css/app/loading.css"
     ]
   },
   "clientModules": {
@@ -3333,19 +3333,19 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/loading.css",
-        "static/css/app/layout.css"
-      ]
-    },
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
+      ]
+    },
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css",
+        "static/css/app/loading.css"
       ]
     },
     "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\components\\Header.jsx": {
