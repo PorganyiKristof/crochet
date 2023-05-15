@@ -41,6 +41,8 @@ export default function SwiperPage({ images }) {
                     height={"auto"}
                     alt="asd"
                     className="top-0 lg:-translate-y-1/3 w-full h-full"
+                    placeholder="blur"
+                    blurDataURL={`${image}`}
                   />
                 </div>
               </SwiperSlide>
