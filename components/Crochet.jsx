@@ -11,7 +11,7 @@ export default function Crochet({ crochet }) {
     >
       <Image
         className="w-max h-auto object-scale-down group-hover:scale-150 ease-in-out transition duration-500 delay-100 md:rounded-xl"
-        src={crochet.img[0]}
+        src={crochet.img.main}
         alt={crochet.name}
         width={500}
         height={200}

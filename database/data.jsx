@@ -1,7 +1,7 @@
-import test1 from "@public/assets/images/343016261_764547991740663_7145802567922255948_n.jpg";
-import test2 from "@public/assets/images/343016261_764547991740663_7145802567922255948_n.png";
-import test3 from "@public/assets/images/343082287_5692679047503334_5048110264889831882_n.jpg";
-import zumzum from "@public/assets/images/zumzum.JPG";
+import hog from "@public/assets/images/main_img/DSC01658.jpg";
+import hog_slider1 from "@public/assets/images/slider_img/DSC01662.jpg";
+import hog_slider2 from "@public/assets/images/slider_img/DSC01663.jpg";
+import hog_slider3 from "@public/assets/images/slider_img/DSC01664.jpg";
 
 const data = {
   crochets: [
@@ -12,7 +12,10 @@ const data = {
       price: "5000$",
       colors: ["yellow", "black"],
       timetomake: "2 weeks",
-      img: [zumzum],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "2",
@@ -20,7 +23,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [zumzum],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "3",
@@ -28,7 +34,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [zumzum],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "4",
@@ -36,7 +45,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [zumzum],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "5",
@@ -45,7 +57,10 @@ const data = {
       price: "500$",
       colors: ["red", "white"],
       timetomake: "1 month",
-      img: [test1],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "6",
@@ -53,7 +68,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [test1],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "7",
@@ -61,7 +79,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [test2],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
     {
       id: "8",
@@ -69,7 +90,10 @@ const data = {
       text: ["Very nice"],
       price: "200$",
       colors: ["red", "white"],
-      img: [test3],
+      img: {
+        main: hog,
+        slider: [hog_slider1, hog_slider2, hog_slider3],
+      },
     },
   ],
 };
