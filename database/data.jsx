@@ -10,6 +10,7 @@ const data = {
       name: "Leattle Bee",
       text: ["text", "good"],
       price: "5000$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -22,9 +23,10 @@ const data = {
     },
     {
       id: "2",
-      name: "Hadgehog",
+      name: "Hedgehog",
       text: ["Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -37,11 +39,12 @@ const data = {
     {
       id: "3",
       name: "Hadgehog",
-      text: ["Very nice"],
+      text: ["Very nice", "Very nice Very nice Very nice Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
-        { title: "Main Color", color: "white" },
-        { title: "Not the Main Color", color: "red" },
+        { title: "Main Color", color: "cyan" },
+        { title: "Not the Main Color", color: "violet" },
       ],
       img: {
         main: hog,
@@ -51,8 +54,9 @@ const data = {
     {
       id: "4",
       name: "Hadgehog",
-      text: ["Very nice"],
+      text: ["Very nice", "Very nice Very nice Very nice Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -67,6 +71,7 @@ const data = {
       name: "MUU",
       text: ["text", "good"],
       price: "500$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -82,6 +87,7 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -96,6 +102,7 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
@@ -110,6 +117,7 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
+      size: "150x120",
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },

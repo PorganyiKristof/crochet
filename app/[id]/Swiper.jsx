@@ -32,15 +32,15 @@ export default function SwiperPage({ images }) {
       >
         {images?.map((image) => {
           return (
-            <div key={image} className="object-fill  ">
+            <div key={image} className="object-fill">
               <SwiperSlide>
-                <div className="swiper-zoom-container flex items-center justify-center h-full">
+                <div className="swiper-zoom-container flex items-center justify-center h-full relative">
                   <Image
                     src={image}
                     width={"auto"}
                     height={"auto"}
                     alt="asd"
-                    className="w-full h-full"
+                    className="absolute translate-x-1/2 w-full h-full"
                   />
                 </div>
               </SwiperSlide>
