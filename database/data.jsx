@@ -1,7 +1,7 @@
 import hog from "@public/assets/images/main_img/DSC01658.jpg";
-import hog_slider1 from "@public/assets/images/slider_img/DSC01662.jpg";
-import hog_slider2 from "@public/assets/images/slider_img/DSC01663.jpg";
-import hog_slider3 from "@public/assets/images/slider_img/DSC01664.jpg";
+import hog_slider1 from "@public/assets/images/slider_img/hedgehog1.jpg";
+import hog_slider2 from "@public/assets/images/slider_img/hedgehog2.jpg";
+import hog_slider3 from "@public/assets/images/slider_img/hedgehog3.jpg";
 
 const data = {
   crochets: [

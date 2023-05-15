@@ -7,7 +7,7 @@ import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Zoom, Navigation, Pagination } from "swiper";
+import { Autoplay, Zoom, Navigation, Pagination } from "swiper";
 
 export default function SwiperPage({ images }) {
   return (
@@ -22,7 +22,12 @@ export default function SwiperPage({ images }) {
         pagination={{
           clickable: true,
         }}
-        modules={[Zoom, Navigation, Pagination]}
+        loop={true}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Zoom, Navigation, Pagination]}
         className="mySwiper max-h-96 object-scale-down"
       >
         {images.map((image) => {
