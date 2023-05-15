@@ -10,7 +10,10 @@ const data = {
       name: "Leattle Bee",
       text: ["text", "good"],
       price: "5000$",
-      colors: ["yellow", "black"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       timetomake: "2 weeks",
       img: {
         main: hog,
@@ -22,7 +25,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
@@ -33,7 +39,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
@@ -44,7 +53,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
@@ -55,7 +67,10 @@ const data = {
       name: "MUU",
       text: ["text", "good"],
       price: "500$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       timetomake: "1 month",
       img: {
         main: hog,
@@ -67,7 +82,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
@@ -78,7 +96,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
@@ -89,7 +110,10 @@ const data = {
       name: "Hadgehog",
       text: ["Very nice"],
       price: "200$",
-      colors: ["red", "white"],
+      colors: [
+        { title: "Main Color", color: "white" },
+        { title: "Not the Main Color", color: "red" },
+      ],
       img: {
         main: hog,
         slider: [hog_slider1, hog_slider2, hog_slider3],
