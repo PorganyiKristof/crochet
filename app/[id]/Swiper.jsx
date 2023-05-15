@@ -40,7 +40,7 @@ export default function SwiperPage({ images }) {
                     width={"auto"}
                     height={"auto"}
                     alt="asd"
-                    className="absolute translate-x-1/2 w-full h-full"
+                    className="top-0 lg:-translate-y-1/3 w-full h-full"
                   />
                 </div>
               </SwiperSlide>
