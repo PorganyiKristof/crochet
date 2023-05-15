@@ -1,13 +1,13 @@
-import hog from "@public/assets/images/main_img/hedgehog.jpg";
-import hog_slider1 from "@public/assets/images/slider_img/hedgehog1.jpg";
-import hog_slider2 from "@public/assets/images/slider_img/hedgehog2.jpg";
-import hog_slider3 from "@public/assets/images/slider_img/hedgehog3.jpg";
-import hog_slider4 from "@public/assets/images/slider_img/hedgehog4.jpg";
-import hog_slider5 from "@public/assets/images/slider_img/hedgehog5.jpg";
+import hog from "@public/assets/main_img/hedgehog.jpg";
+import hog_slider1 from "@public/assets/slider_img/hedgehog1.jpg";
+import hog_slider2 from "@public/assets/slider_img/hedgehog2.jpg";
+import hog_slider3 from "@public/assets/slider_img/hedgehog3.jpg";
+import hog_slider4 from "@public/assets/slider_img/hedgehog4.jpg";
+import hog_slider5 from "@public/assets/slider_img/hedgehog5.jpg";
 
-import mu from "@public/assets/images/main_img/mu.jpg";
-import mu_slider1 from "@public/assets/images/slider_img/mu1.jpg";
-import mu_slider2 from "@public/assets/images/slider_img/mu2.jpg";
+import mu from "@public/assets/main_img/mu.jpg";
+import mu_slider1 from "@public/assets/slider_img/mu1.jpg";
+import mu_slider2 from "@public/assets/slider_img/mu2.jpg";
 
 const data = {
   crochets: [
