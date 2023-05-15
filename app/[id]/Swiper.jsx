@@ -28,13 +28,13 @@ export default function SwiperPage({ images }) {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Zoom, Navigation, Pagination]}
-        className="mySwiper max-h-96 object-scale-down"
+        className="mySwiper max-h-96"
       >
-        {images.map((image) => {
+        {images?.map((image) => {
           return (
-            <div key={image}>
+            <div key={image} className="object-fill  ">
               <SwiperSlide>
-                <div className="swiper-zoom-container">
+                <div className="swiper-zoom-container flex items-center justify-center h-full">
                   <Image
                     src={image}
                     width={"auto"}

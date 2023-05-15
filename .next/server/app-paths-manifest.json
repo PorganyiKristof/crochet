@@ -1,3 +1,7 @@
 {
-  "/[id]/page": "app/[id]/page.js"
+  "/page": "app/page.js",
+  "/[id]/page": "app/[id]/page.js",
+  "/api/mailer/route": "app/api/mailer/route.js",
+  "/email/page": "app/email/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

@@ -29,7 +29,6 @@ yarn-error.log*
 
 # vercel
 .vercel
-ignorecase = true
 # typescript
 *.tsbuildinfo
 next-env.d.ts
