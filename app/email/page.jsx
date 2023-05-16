@@ -16,10 +16,12 @@ export default function emailPage() {
   const submit = async (e) => {
     e.preventDefault();
     const dataMail = {
-      email: email.value,
+      email: email,
       name: e.target.name.value,
       desc: e.target.desc.value,
     };
+    console.log(dataMail);
+
     const response = await fetch("/api/mailer", {
       method: "POST",
       headers: {

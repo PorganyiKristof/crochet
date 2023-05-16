@@ -2,6 +2,7 @@ const nodemailer = require("nodemailer");
 
 export async function POST(req, res, next) {
     const body = await req.json();
+    console.log(body);
     var options = {
         from: "Crochet🐿💰 <porganyikristof@gmail.com>",
         to: "porganyikristof@gmail.com",
