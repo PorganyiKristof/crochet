@@ -13,7 +13,7 @@ export default function layout({ children, params }) {
       <Info crochet={crochet} />
 
       {/* {children} */}
-      <Form />
+      <Form colors={crochet.colors} />
     </section>
   );
 }

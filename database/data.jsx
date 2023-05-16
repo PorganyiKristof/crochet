@@ -45,6 +45,7 @@ const data = {
       colors: [
         { title: "Main Color", color: "white" },
         { title: "Not the Main Color", color: "red" },
+        { title: "3.", color: "#1414" },
       ],
       timetomake: "1 month",
       img: {
