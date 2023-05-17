@@ -1,2 +1,21 @@
-const colors = ["red", "cyan", "red", "red", "red", "red", "red", "red"];
+const colors = [
+  "black",
+  "white",
+  "yellow",
+  "orange",
+  "green",
+  "cyan",
+  "blue",
+  "purple",
+  "red",
+  "brown",
+  "#F5F5DC",
+  "#F5F5B5",
+  "#A67D3D",
+  "#F4A460",
+  "#FFE4C4",
+  "#FFFFF0",
+  "#FAF0E6",
+  "#F0E68C",
+];
 export { colors };
