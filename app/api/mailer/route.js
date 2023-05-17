@@ -14,6 +14,15 @@ export async function POST(req, res, next) {
                 <p>Sender is: ${body.email}</p>
             </div>`
         };
+        var optionsToTheSender = {
+            from: "Crochet🐿💰 <porganyikristof@gmail.com>",
+            to: email,
+            subject: "Crochet-Massage",
+            html: `<div'>
+                <h1>Hi ${body.name} </h1>
+                <p>I will answer later ty</p>
+            </div>`
+        };
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             port: 465,
@@ -31,7 +40,14 @@ export async function POST(req, res, next) {
                     console.log('Main send', info);
                 }
             });
-            console.log(info);
+            let info2 = await transporter.sendMail(optionsToTheSender, (error, info) => {
+                if (error) {
+                    console.log(error);
+                } else {
+                    console.log('Main send', info);
+                }
+            });
+            console.log(info, info2);
         } catch (error) {
             console.log(error);
             return new Response(error)
@@ -39,18 +55,9 @@ export async function POST(req, res, next) {
         return new Response('OK')
     } else if (body.route === 'dynamicpage') {
         const colorJson = JSON.parse(body.colors)
-        const emailStyle = {
-            backgroundColor: 'lightblue',
-            padding: '10px',
-            margin: '5px',
-        };
 
-        const titleStyle = {
-            color: 'red',
-        };
-        let colorDiv = colorJson.map((m, index) => `<div key={${index}} style='${emailStyle}'>${m.title} - <div>${m.color}</div> </div>`);
+        let colorDiv = colorJson.map((m, index) => `<div key={${index}}>${m.title} - <div>${m.color}</div> </div>`);
         colorDiv = colorDiv.join('');
-
         var options = {
             from: "Crochet🐿💰 <porganyikristof@gmail.com>",
             to: "porganyikristof@gmail.com",
