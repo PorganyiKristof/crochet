@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from "react-uuid";
 
 export default function Info({ crochet }) {
   return (
@@ -20,7 +21,7 @@ export default function Info({ crochet }) {
         <div className="max-w-md m-auto">
           {crochet.colors.map((m, index) => (
             <div
-              key={index}
+              key={uuid()}
               className="grid grid-cols-2 gap-10 border-2 border-custom4 p-5 mb-2"
             >
               {m.title}

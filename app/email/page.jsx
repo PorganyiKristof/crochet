@@ -19,6 +19,7 @@ export default function emailPage() {
       email: email,
       name: e.target.name.value,
       desc: e.target.desc.value,
+      route: "singlepage",
     };
     console.log(dataMail);
 

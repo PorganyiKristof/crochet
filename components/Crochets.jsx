@@ -1,6 +1,7 @@
 import React from "react";
 import { data } from "@database/data.jsx";
 import Crochet from "./Crochet";
+import uuid from "react-uuid";
 
 export default function Crochets() {
   return (
@@ -11,7 +12,7 @@ export default function Crochets() {
         </h1>
         <div className="w-screen grid grid-cols-fluid gap-x-5 gap-y-10 md:m-auto md:w-5/6 ">
           {data.crochets.map((crochet) => (
-            <Crochet key={crochet.id} crochet={crochet} />
+            <Crochet key={uuid()} crochet={crochet} />
           ))}
         </div>
       </div>

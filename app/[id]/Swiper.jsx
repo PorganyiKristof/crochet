@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import uuid from "react-uuid";
 
 import { Autoplay, Zoom, Navigation, Pagination } from "swiper";
 
@@ -30,10 +31,10 @@ export default function SwiperPage({ images }) {
         modules={[Autoplay, Zoom, Navigation, Pagination]}
         className="mySwiper max-h-96"
       >
-        {images?.map((image) => {
+        {images?.map((image, index) => {
           return (
-            <div key={image} className="object-fill">
-              <SwiperSlide>
+            <div key={`${uuid()}-${index}`} className="object-fill">
+              <SwiperSlide key={uuid()}>
                 <div className="swiper-zoom-container flex items-center justify-center h-full relative">
                   <Image
                     src={image}

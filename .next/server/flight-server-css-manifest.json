@@ -22,6 +22,14 @@
       "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\swiper\\modules\\zoom\\zoom.min.css",
       "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\swiper\\modules\\navigation\\navigation.min.css",
       "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\node_modules\\swiper\\modules\\pagination\\pagination.min.css"
+    ],
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\page": [
+      "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css",
+      "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css"
+    ],
+    "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\app\\email\\page": [
+      "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\globals.css",
+      "D:\\programok\\Xampp\\htdocs\\NextJs\\crochet\\styles\\loader.module.css"
     ]
   }
 }

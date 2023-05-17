@@ -2,20 +2,46 @@
 import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { colors as colorsFromData } from "@/database/colors.jsx";
+import uuid from "react-uuid";
 
 export default function Form({ colors }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [text, setText] = useState("");
   const [pickedColors, setPickedColors] = useState(colors);
   const [toggle, setToggle] = useState(false);
   const [selectedColorToggle, setSelectedColorToggle] = useState(0);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    const emailData = {
+      email: email,
+      name: name,
+      colors: JSON.stringify(pickedColors),
+      desc: text,
+      route: "dynamicpage",
+    };
+    console.log(emailData);
+    const response = await fetch("/api/mailer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(emailData),
+    });
+    if (response.ok) {
+      console.log(response.statusText);
+    } else {
+      console.log(response.statusText);
+    }
+  };
 
   return (
     <section className="w-4/5 md:w-96 m-auto min-h-screen">
       <h1 className="head_text text-center mb-5">
         Order one with your attributes
       </h1>
-      <form action="" className="flex flex-col ">
+      <form onSubmit={submit} className="flex flex-col ">
         <fieldset className="text-center flex flex-col gap-2 md:flex-row">
           <TextField
             id="email"
@@ -43,7 +69,7 @@ export default function Form({ colors }) {
         </label>
         <div className={`flex p-2 bg-custom3`}>
           {pickedColors.map((color, index) => (
-            <div key={`${index}-${color}`} className="w-full relative">
+            <div key={uuid()} className="w-full relative">
               <div
                 style={{ backgroundColor: color.color }}
                 className="w-12 h-8 m-auto rounded-lg border-4 border-custom4"
@@ -60,7 +86,7 @@ export default function Form({ colors }) {
             {colorsFromData.map((datacolor, index) => {
               return (
                 <div
-                  key={`${datacolor}-${index}`}
+                  key={uuid()}
                   style={{ backgroundColor: datacolor }}
                   className="w-12 h-8 m-auto rounded-lg border-4 border-custom4"
                   onClick={() => {
@@ -81,6 +107,8 @@ export default function Form({ colors }) {
         )}
         <TextField
           id="desc"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
           required
           label="Please enter you`re description or question!"
           multiline
