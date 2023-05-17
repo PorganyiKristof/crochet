@@ -16,7 +16,7 @@ export async function POST(req, res, next) {
         };
         var optionsToTheSender = {
             from: "Crochet🐿💰 <porganyikristof@gmail.com>",
-            to: email,
+            to: body.email,
             subject: "Crochet-Massage",
             html: `<div'>
                 <h1>Hi ${body.name} </h1>
