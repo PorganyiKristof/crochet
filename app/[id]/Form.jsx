@@ -1,17 +1,42 @@
 "use client";
-import { Button, TextField } from "@mui/material";
-import React, { useState } from "react";
+import { Button, Slider, TextField } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { colors as colorsFromData } from "@/database/colors.jsx";
 import uuid from "react-uuid";
-
+import { useSession } from "next-auth/react";
+const marks = [
+  {
+    value: 10,
+    label: "6 mm",
+  },
+  {
+    value: 30,
+    label: "8 mm",
+  },
+  {
+    value: 60,
+    label: "12 mm",
+  },
+  {
+    value: 100,
+    label: "16 mm",
+  },
+];
+function valueLabelFormat(value) {
+  return marks.findIndex((mark) => mark.value === value) + 1;
+}
 export default function Form({ colors }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [text, setText] = useState("");
+  const [range, setRange] = useState();
   const [pickedColors, setPickedColors] = useState(colors);
   const [toggle, setToggle] = useState(false);
   const [selectedColorToggle, setSelectedColorToggle] = useState(0);
-
+  const { data: session } = useSession();
+  useEffect(() => {
+    setEmail(session?.user?.email);
+  }, [session]);
   const submit = async (e) => {
     e.preventDefault();
     const emailData = {
@@ -20,6 +45,7 @@ export default function Form({ colors }) {
       colors: JSON.stringify(pickedColors),
       desc: text,
       route: "dynamicpage",
+      yarn: range,
     };
     console.log(emailData);
     const response = await fetch("/api/mailer", {
@@ -64,7 +90,21 @@ export default function Form({ colors }) {
             required
           />
         </fieldset>
-        <label className="text-center">
+
+        <label className="text-center">Set the width of the yarn</label>
+
+        <Slider
+          aria-label="Restricted values"
+          defaultValue={20}
+          valueLabelFormat={valueLabelFormat}
+          getAriaValueText={(e) => setRange(e)}
+          step={null}
+          valueLabelDisplay="auto"
+          marks={marks}
+          color="secondary"
+          className="w-2/3 m-auto mb-6"
+        />
+        <label className="text-center m-3">
           Set the colors you would like to be in the crochet
         </label>
         <div className={`flex p-2 bg-custom3`}>

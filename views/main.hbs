@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section{ text-align: center; background-color: #F5EEE6;border: 1px solid
+      #C86B85 ; border-radius:15px ; padding: 15px;}
+      h1{color:#E6A4B4;border-bottom:1px solid #C86B85}
+      .colors{background-color: #F3D7CA; border: 1px solid #C86B85;
+      border-radius:15px ; padding: 15px;} .color{ border-radius:15px; width:
+      80%; color: white;margin:auto;margin-top: 5px;font-weight: bold;padding:
+      5px;}
+    </style>
+  </head>
+  <body>
+    <section>
+      {{#if text}}
+        {{#if yarn}}
+          <div>
+            <h1>You recived an email from {{name}}</h1>
+            <p>{{text}}</p>
+            <div class="colors">
+              {{#each colorDiv}}
+                <div
+                  class="color"
+                  style="background-color: {{this.color}}"
+                >{{this.title}}</div>
+              {{/each}}
+            </div>
+            <p>Yarn: {{yarn}}mm</p>
+            <p>Sender is: {{email}}</p>
+          </div>
+        {{else}}
+          <div>
+            <h1>You recived an email from {{name}}</h1>
+            <p>{{text}}</p>
+            <h2>{{email}}</h2>
+          </div>
+
+        {{/if}}
+
+      {{else}}
+        <div>
+          <h1>Hi {{name}} </h1>
+          <ph2>Ty for your mail i will answer as soon as posible!</ph2>
+        </div>
+      {{/if}}
+    </section>
+  </body>
+</html>
