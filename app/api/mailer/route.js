@@ -12,17 +12,25 @@ export async function POST(req, res, next) {
             pass: process.env.google_password, // generated ethereal password
         },
     });
-    /* transporter.use('compile', hbs({
-        viewEngine: 'express-handlebars',
-        viewPath: './views/',
-        extname: '.handlebars',
-    })) */
+
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
     transporter.use(
         "compile",
         hbs({
             viewEngine: {
-                extname: '.hbs', // handlebars extension
-                layoutsDir: 'views/', // location of handlebars templates
+                extname: '.hbs',
+                layoutsDir: 'views/',
             },
             viewPath: 'views',
             extName: '.hbs',
@@ -52,9 +60,20 @@ export async function POST(req, res, next) {
                 email: body.email,
             }
         };
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail(options, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
+        });
 
-
-        try {
+        /* try {
             let info = await transporter.sendMail(options, (error, info) => {
                 if (error) {
                     console.log(error);
@@ -67,7 +86,7 @@ export async function POST(req, res, next) {
         } catch (error) {
             console.log(error);
             return new Response(error)
-        }
+        } */
 
     } else if (body.route === 'dynamicpage') {
         const colorJson = JSON.parse(body.colors)
@@ -86,7 +105,19 @@ export async function POST(req, res, next) {
                 yarn: body.yarn
             }
         };
-        try {
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail(options, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
+        });
+        /* try {
             let info = await transporter.sendMail(options, (error, info) => {
                 if (error) {
                     console.log(error);
@@ -97,10 +128,22 @@ export async function POST(req, res, next) {
         } catch (error) {
             console.log(error);
             return new Response(error)
-        }
+        } */
 
     }
-    try {
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(optionsToTheSender, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
+    /* try {
         let info = await transporter.sendMail(optionsToTheSender, (error, info) => {
             if (error) {
                 console.log(error);
@@ -112,7 +155,7 @@ export async function POST(req, res, next) {
     } catch (error) {
         console.log(error);
         return new Response(error)
-    }
+    } */
     return new Response('OK')
 
 }
