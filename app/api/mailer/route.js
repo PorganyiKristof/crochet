@@ -13,7 +13,29 @@ export async function POST(req, res, next) {
             pass: process.env.google_password, // generated ethereal password
         },
     });
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
+    transporter.use(
+        "compile",
+        hbs({
+            viewEngine: {
+                extname: '.hbs',
+                layoutsDir: path.resolve('./views/'),
+            },
+            viewPath: path.resolve('./views/'),
+            extName: '.hbs',
 
+        }))
     await new Promise((resolve, reject) => {
         // verify connection configuration
         transporter.verify(function (error, success) {
@@ -27,17 +49,7 @@ export async function POST(req, res, next) {
         });
     });
 
-    transporter.use(
-        "compile",
-        hbs({
-            viewEngine: {
-                extname: '.hbs',
-                layoutsDir: 'views',
-            },
-            viewPath: 'views',
-            extName: '.hbs',
 
-        }))
 
     var optionsToTheSender = {
         from: "Crochet🐿💰 <porganyikristof@gmail.com>",
