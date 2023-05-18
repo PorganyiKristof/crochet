@@ -1,5 +1,6 @@
 const nodemailer = require("nodemailer");
 const hbs = require("nodemailer-express-handlebars");
+const path = require('path');
 
 export async function POST(req, res, next) {
     const body = await req.json();
@@ -25,14 +26,15 @@ export async function POST(req, res, next) {
             }
         });
     });
+
     transporter.use(
         "compile",
         hbs({
             viewEngine: {
                 extname: '.hbs',
-                layoutsDir: './',
+                layoutsDir: 'views',
             },
-            viewPath: './',
+            viewPath: 'views',
             extName: '.hbs',
 
         }))

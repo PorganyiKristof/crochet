@@ -95,7 +95,7 @@ export default function Form({ colors }) {
 
         <Slider
           aria-label="Restricted values"
-          defaultValue={20}
+          defaultValue={100}
           valueLabelFormat={valueLabelFormat}
           getAriaValueText={(e) => setRange(e)}
           step={null}
