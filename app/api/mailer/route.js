@@ -30,7 +30,7 @@ export async function POST(req, res, next) {
         hbs({
             viewEngine: {
                 extname: '.hbs',
-                layoutsDir: 'views/',
+                layoutsDir: './views/',
             },
             viewPath: 'views',
             extName: '.hbs',
