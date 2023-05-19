@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { data } from "@database/data.jsx";
 import Crochet from "./Crochet";
 import uuid from "react-uuid";
+import styles from "@styles/loaderblock.module.css";
 
 export default function Crochets() {
   return (
@@ -11,9 +12,16 @@ export default function Crochets() {
           If you like my creations just in a few steps you can order one!
         </h1>
         <div className="w-screen grid grid-cols-fluid gap-x-5 gap-y-10 md:m-auto md:w-5/6 ">
-          {data.crochets.map((crochet) => (
-            <Crochet key={uuid()} crochet={crochet} />
-          ))}
+          {data.crochets.map((crochet) => {
+            return (
+              <Suspense
+                key={uuid()}
+                fallback={<span className={styles.loader}></span>}
+              >
+                <Crochet crochet={crochet} />
+              </Suspense>
+            );
+          })}
         </div>
       </div>
     </div>

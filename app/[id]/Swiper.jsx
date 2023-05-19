@@ -41,9 +41,10 @@ export default function SwiperPage({ images }) {
                     width={"auto"}
                     height={"auto"}
                     alt="asd"
-                    className="top-0 lg:-translate-y-1/3 w-full h-full"
-                    placeholder="blur"
-                    blurDataURL={`${image}`}
+                    className="top-0 lg:-translate-y-1/3 w-full h-full transition-opacity opacity-0 duration-[2s]"
+                    onLoadingComplete={(image) =>
+                      image.classList.remove("opacity-0")
+                    }
                   />
                 </div>
               </SwiperSlide>
