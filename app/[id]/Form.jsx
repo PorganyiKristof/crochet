@@ -41,7 +41,7 @@ export default function Form({ colors }) {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [range, setRange] = useState();
-  const [emilaSending, setEmailSending] = useState(false);
+  const [emilaSending, setEmailSending] = useState(true);
   const [pickedColors, setPickedColors] = useState(colors);
   const [toggle, setToggle] = useState(false);
   const [selectedColorToggle, setSelectedColorToggle] = useState(0);
@@ -80,7 +80,7 @@ export default function Form({ colors }) {
   return (
     <div className="relative">
       <section className="w-4/5 md:w-96 m-auto min-h-screen">
-        <h1 className="head_text text-center mb-5">
+        <h1 className="head_text text-center mb-5 !mt-0 pt-5">
           Order one with your attributes
         </h1>
         <form onSubmit={submit} className="flex flex-col ">
