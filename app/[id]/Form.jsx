@@ -41,7 +41,7 @@ export default function Form({ colors }) {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [range, setRange] = useState();
-  const [emilaSending, setEmailSending] = useState(true);
+  const [emilaSending, setEmailSending] = useState(false);
   const [pickedColors, setPickedColors] = useState(colors);
   const [toggle, setToggle] = useState(false);
   const [selectedColorToggle, setSelectedColorToggle] = useState(0);
