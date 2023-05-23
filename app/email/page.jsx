@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
+import EmailIsSending from "@components/EmailIsSending";
 import { Button, TextField } from "@mui/material";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -9,12 +10,14 @@ export default function emailPage() {
   const { data: session } = useSession();
   const [email, setEmail] = useState();
   const { push } = useRouter();
+  const [emilaSending, setEmailSending] = useState(false);
 
   useEffect(() => {
     setEmail(session?.user?.email);
   }, [session]);
   const submit = async (e) => {
     e.preventDefault();
+    setEmailSending(true);
     const dataMail = {
       email: email,
       name: e.target.name.value,
@@ -31,9 +34,11 @@ export default function emailPage() {
       body: JSON.stringify(dataMail),
     });
     if (response.ok) {
+      setEmailSending(false);
       push("/");
     } else {
       console.log(response.statusText);
+      setEmailSending(false);
     }
   };
   return (
@@ -75,6 +80,7 @@ export default function emailPage() {
           Submit
         </Button>
       </form>
+      {emilaSending ? <EmailIsSending /> : <></>}
     </section>
   );
 }
