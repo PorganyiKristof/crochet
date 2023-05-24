@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Button from "@mui/material/Button";
 import Image from "next/image";
@@ -9,26 +9,76 @@ export default function Header() {
   const [toggleDropDown, setToggleDropDown] = useState(false);
   const { data: session } = useSession();
   const { push } = useRouter();
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    if (
+      session?.user?.email === "porganyikristof@gmail.com" ||
+      session?.user?.email === "betlehemdorka@gmail.com"
+    )
+      setIsAdmin(true);
+  }, [session]);
   return (
     <nav className="grid grid-cols-4 gap-5 z-30 items-center md:absolute top-0 right-0 pt-4 mx-5 md:grid-cols-1 ">
       {session ? (
-        <div className="col-span-3 grid grid-cols-2 gap-5 md:hidden">
-          <Button
-            variant="outlined"
-            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
-            onClick={() => push("/")}
-          >
-            Home
-          </Button>
+        !!isAdmin ? (
+          <div className="col-span-3 grid grid-cols-3 gap-5 md:hidden">
+            <Button
+              variant="outlined"
+              sx={{
+                border: "1px solid var(--deepest)",
+                color: "var(--deepest)",
+              }}
+              onClick={() => push("/")}
+            >
+              Home
+            </Button>
+            <Button
+              variant="outlined"
+              sx={{
+                border: "1px solid var(--deepest)",
+                color: "var(--deepest)",
+              }}
+              onClick={() => push("/admin/emailToUser")}
+            >
+              Send Mail to User
+            </Button>
+            <Button
+              onClick={() => signOut()}
+              variant="outlined"
+              sx={{
+                border: "1px solid var(--deepest)",
+                color: "var(--deepest)",
+              }}
+            >
+              Sign Out
+            </Button>
+          </div>
+        ) : (
+          <div className="col-span-3 grid grid-cols-2 gap-5 md:hidden">
+            <Button
+              variant="outlined"
+              sx={{
+                border: "1px solid var(--deepest)",
+                color: "var(--deepest)",
+              }}
+              onClick={() => push("/")}
+            >
+              Home
+            </Button>
 
-          <Button
-            onClick={() => signOut()}
-            variant="outlined"
-            sx={{ border: "1px solid var(--deepest)", color: "var(--deepest)" }}
-          >
-            Sign Out
-          </Button>
-        </div>
+            <Button
+              onClick={() => signOut()}
+              variant="outlined"
+              sx={{
+                border: "1px solid var(--deepest)",
+                color: "var(--deepest)",
+              }}
+            >
+              Sign Out
+            </Button>
+          </div>
+        )
       ) : (
         <div className="col-span-4 grid grid-cols-2 gap-5 md:hidden">
           <Button
@@ -75,7 +125,7 @@ export default function Header() {
               </Button>
             </div>
             {toggleDropDown && (
-              <div className="rounded-lg justify-center self-center">
+              <div className="rounded-lg justify-center self-center gap-2">
                 <Button
                   onClick={() => signOut()}
                   variant="text"
@@ -88,6 +138,21 @@ export default function Header() {
                 >
                   Sign Out
                 </Button>
+                {!!isAdmin && (
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      color: "white",
+                      justifyContent: "center",
+                      border: "1px solid var(--deepest)",
+                      color: "var(--deepest)",
+                      marginLeft: "10px",
+                    }}
+                    onClick={() => push("/admin/emailToUser")}
+                  >
+                    Send Mail to User
+                  </Button>
+                )}
               </div>
             )}
           </div>
