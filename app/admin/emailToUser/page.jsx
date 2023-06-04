@@ -19,17 +19,15 @@ export default function EmailToUser() {
             label="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            helperText="We'll never share your email."
             className="my-2"
             variant="outlined"
             required
           />
           <TextField
-            id="email"
+            id="title"
             label="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            helperText="We'll never share your email."
             className="my-2"
             variant="outlined"
             required

@@ -46,11 +46,18 @@ export default function Form({ colors }) {
   const [toggle, setToggle] = useState(false);
   const [selectedColorToggle, setSelectedColorToggle] = useState(0);
   const { data: session } = useSession();
+  const [email_error, setEmail_Error] = useState(false);
   useEffect(() => {
     setEmail(session?.user?.email);
   }, [session]);
   const submit = async (e) => {
     e.preventDefault();
+    var validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!email.match(validRegex)) {
+      setEmail_Error(true);
+      return false;
+    }
     setEmailSending(true);
     const emailData = {
       email: email,
@@ -93,6 +100,7 @@ export default function Form({ colors }) {
               helperText="We'll never share your email."
               className="my-2"
               variant="outlined"
+              {...(!!email_error && { error: true })}
               required
             />
             <TextField

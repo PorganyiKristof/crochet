@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react";
 export default function emailPage() {
   const { data: session } = useSession();
   const [email, setEmail] = useState();
+  const [email_error, setEmail_Error] = useState(false);
   const { push } = useRouter();
   const [emilaSending, setEmailSending] = useState(false);
 
@@ -17,6 +18,12 @@ export default function emailPage() {
   }, [session]);
   const submit = async (e) => {
     e.preventDefault();
+    var validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!email.match(validRegex)) {
+      setEmail_Error(true);
+      return false;
+    }
     setEmailSending(true);
     const dataMail = {
       email: email,
@@ -41,6 +48,10 @@ export default function emailPage() {
       setEmailSending(false);
     }
   };
+  const emailOnChange = (e) => {
+    setEmail(e);
+  };
+
   return (
     <section>
       <form onSubmit={submit} className="flex flex-col">
@@ -49,10 +60,11 @@ export default function emailPage() {
             id="email"
             label="Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => emailOnChange(e.target.value)}
             helperText="We'll never share your email."
             className="my-2"
             variant="outlined"
+            {...(!!email_error && { error: true })}
             required
           />
           <TextField
