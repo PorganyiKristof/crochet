@@ -52,7 +52,7 @@ export async function POST(req, res, next) {
 
 
     var optionsToTheSender = {
-        from: "Crochet🐿💰 <porganyikristof@gmail.com>",
+        from: "Crochet🐿💰 <fluffyfuzziescrochet@gmail.com>",
         to: body.email,
         subject: "Crochet",
         template: "main",
@@ -64,8 +64,8 @@ export async function POST(req, res, next) {
     if (body.route === 'singlepage') {
 
         var options = {
-            from: "Crochet🐿💰 <porganyikristof@gmail.com>",
-            to: "porganyikristof@gmail.com",
+            from: "Crochet🐿💰 <fluffyfuzziescrochet@gmail.com>",
+            to: "fluffyfuzziescrochet@gmail.com",
             subject: "Crochet-Massage",
             template: "main",
             context: {
@@ -107,8 +107,8 @@ export async function POST(req, res, next) {
         /* let colorDiv = colorJson.map((m, index) => `<td key={${index}}>${m.title} - <div>${m.color}</div> </td>`);
         colorDiv = colorDiv.join(''); */
         var options = {
-            from: "Crochet🐿💰 <porganyikristof@gmail.com>",
-            to: "porganyikristof@gmail.com",
+            from: "Crochet🐿💰 <fluffyfuzziescrochet@gmail.com>",
+            to: "fluffyfuzziescrochet@gmail.com",
             subject: "Crochet-Massage",
             template: "main",
             context: {
