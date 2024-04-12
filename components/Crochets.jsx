@@ -6,12 +6,14 @@ import styles from "@styles/loaderblock.module.css";
 
 export default function Crochets() {
   return (
-    <div className="bg-custom2 min-h-screen pb-20">
+    <div className="bg-custom2 h-full px-10">
       <div className="pt-5">
-        <h1 className="head_text text-center mb-20 mt-0 md:w-3/5 m-auto md:pt-2">
-          If you like my creations just in a few steps you can order one!
+        <h1 className="head_text  text-center mb-20 mt-0 md:w-3/5 m-auto md:pt-2">
+          <span className="text-4xl lg:text-6xl">
+            If you like my creations just in a few steps you can order one!
+          </span>
         </h1>
-        <div className="w-screen grid grid-cols-fluid gap-x-5 gap-y-10 md:m-auto md:w-5/6 ">
+        <div className="flex flex-col w-fit md:grid grid-cols-fluid gap-5 m-auto md:w-5/6 ">
           {data.crochets.map((crochet) => {
             return (
               <Suspense

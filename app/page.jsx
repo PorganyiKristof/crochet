@@ -3,20 +3,17 @@ import SendMainBtn from "@components/SendMainBtn";
 
 export default function page() {
   return (
-    <section className="w-screen flex-center flex-col">
-      <h1 className="head_text text-center w-full">
-        Crochet<span className="sm:hidden"> </span>.Dorka
-        <span className="sm:hidden"> </span>.com
+    <section className="w-screen flex-center flex-col mt-10 md:mt-20">
+      <h1 className="text-3xl font-bold md:text-6xl text-center w-full px-5">
+        Crochet.Dorka.com
         <br />
         <span className="custom_gradient text-center w-full">
           Guess what, I`ll do it
         </span>
       </h1>
-      <p className="desc">
+      <p className="text-center text-xl lg:w-1/3 m-auto mt-4 px-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil
-        quas eum, pariatur aut animi ut veritatis praesentium! Cum, cumque
-        officiis similique, officia laudantium non tenetur perferendis assumenda
-        reiciendis beatae ullam soluta.
+        quas eum, pariatur aut animi ut veritatis praesentium!
       </p>
       <SendMainBtn />
       <Crochets />
